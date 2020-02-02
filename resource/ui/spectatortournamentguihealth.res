@@ -103,7 +103,7 @@
 
 	"NameMask"
 	{
-		"ControlName"	"CTFImagePanel"
+		"ControlName"	"ImagePanel"
 		"fieldName"		"NameMask"
 		"xpos"			"0"
 		"ypos"			"0"
@@ -113,7 +113,7 @@
 		"alpha"			"255"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACTblur"
+		"fillcolor"			"collyhuddarkgray"
 		"scaleImage"	"1"
 
 	}

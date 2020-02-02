@@ -25,40 +25,20 @@
 		"killstreak_image_width" 					"12"
 	}
 
-	"BlurBG"
+	
+	"RedTeamImage"
 	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BlurBG"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"-5"
-		"wide"			"f0"
-		"tall"			"f0"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACTClear"
+		"ControlName"		"ImagePanel"
+		"fieldName"		"RedTeamImage"
+		"xpos"			"9999"
 	}
-	"BlurBGtohideretardshit"
+	"BlueTeamImage"
 	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BlurBGtohideretardshit"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"0"
-		"wide"			"2"
-		"tall"			"30"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACTClear"
+		"ControlName"		"ImagePanel"
+		"fieldName"		"BlueTeamImage"
+		"xpos"			"9999"
 	}
+	
 	"BlurBGOverlay"
 	{
 		"ControlName"		"ImagePanel"
@@ -74,28 +54,12 @@
 		"border"		"noborder"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillcolor"			"0 0 0 15"
+		"fillcolor"			"0 0 0 25"
 	}
-	"BlurBGOverlayretard"
-	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"BlurBGOverlayretard"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"1"
-		"wide"			"0"
-		"tall"			"10"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"fillcolor"			"0 0 0 15"
-	}
+	
 	"BlueTeamBG"
 	{
-		"ControlName"		"ctfImagePanel"
+		"ControlName"		"ImagePanel"
 		"fieldName"		"BlueTeamBG"
 		"xpos"			"c-266"
 		"ypos"			"c-70"
@@ -103,13 +67,36 @@
 		"wide"			"254"
 		"tall"			"143"
 		"tall_minmode"			"250"
+		"alpha"			"165"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"border"		"noborder"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"			"collyhuddarkgray"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}
+	"BlueTeamBGHide"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"BlueTeamBGHide"
+		"xpos"			"c-266"
+		"ypos"			"c-70"
+		"ypos_minmode"			"c-124"
+		"wide"			"254"
+		"tall"			"20"
+		"tall_minmode"			"20"
 		"alpha"			"255"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"border"		"noborder"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
+		"fillcolor"			"collyhuddarkgray"
 
 		if_mvm
 		{
@@ -119,7 +106,7 @@
 	
 	"RedTeamBG"
 	{
-		"ControlName"		"ctfImagePanel"
+		"ControlName"		"ImagePanel"
 		"fieldName"		"RedTeamBG"
 		"xpos"			"c12"
 		"ypos"			"c-70"
@@ -127,13 +114,37 @@
 		"tall_minmode"			"250"
 		"wide"			"254"
 		"tall"			"143"
+		"alpha"			"165"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"border"		"noborder"
+		"visible"		"1"
+		"enabled"		"1"
+		"fillcolor"			"collyhuddarkgray"
+
+		if_mvm
+		{
+			"visible"		"0"
+		}
+	}
+	
+	"RedTeamBGHide"
+	{
+		"ControlName"		"ImagePanel"
+		"fieldName"		"RedTeamBGHide"
+		"xpos"			"c12"
+		"ypos"			"c-70"
+		"ypos_minmode"			"c-124"
+		"tall_minmode"			"20"
+		"wide"			"254"
+		"tall"			"20"
 		"alpha"			"255"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"border"		"noborder"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
+		"fillcolor"			"collyhuddarkgray"
 
 		if_mvm
 		{
@@ -143,7 +154,7 @@
 	
 	"BlueTeamPlayerCover"
 	{
-		"ControlName"		"ctfImagePanel"
+		"ControlName"		"ImagePanel"
 		"fieldName"		"BlueTeamPlayerCover"
 		"xpos"			"c-266"
 		"ypos"			"c-54"
@@ -158,269 +169,17 @@
 		"border"		"noborder"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
+		"fillcolor"			"collyhuddarkgray"
 
 		if_mvm
 		{
 			"visible"		"0"
 		}
 	}
-	"BluePlayerGap"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap"
-		"xpos"			"c-266"
-		"ypos"			"c-21"
-		"ypos_minmode"			"c-75"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap2"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap2"
-		"xpos"			"c-266"
-		"ypos"			"c-3"
-		"ypos_minmode"	"c-57"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap3"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap3"
-		"xpos"			"c-266"
-		"ypos"			"c15"
-		"ypos_minmode"			"c-39"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap4"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap4"
-		"xpos"			"c-266"
-		"ypos"			"c33"
-		"ypos_minmode"	"c-21"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap5"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap5"
-		"xpos"			"c-266"
-		"ypos"			"c51"
-		"ypos_minmode"			"c-4"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap6"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap6"
-		"xpos"			"c-266"
-		"ypos"			"9999"
-		"ypos_minmode"			"c14"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap7"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap7"
-		"xpos"			"c-266"
-		"ypos"			"9999"
-		"ypos_minmode"			"c32"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap8"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap8"
-		"xpos"			"c-266"
-		"ypos"			"9999"
-		"ypos_minmode"			"c50"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap9"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap9"
-		"xpos"			"c-266"
-		"ypos"			"9999"
-		"ypos_minmode"			"c68"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap10"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap10"
-		"xpos"			"c-266"
-		"ypos"			"9999"
-		"ypos_minmode"			"c86"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"BluePlayerGap11"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"BluePlayerGap11"
-		"xpos"			"c-266"
-		"ypos"			"9999"
-		"ypos_minmode"			"c103"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
+	
 	"RedTeamPlayerCover"
 	{
-		"ControlName"		"ctfImagePanel"
+		"ControlName"		"ImagePanel"
 		"fieldName"		"RedTeamPlayerCover"
 		"xpos"			"c12"
 		"ypos"			"c-54"
@@ -434,266 +193,14 @@
 		"border"		"noborder"
 		"visible"		"1"
 		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
+		"fillcolor"			"collyhuddarkgray"
 
 		if_mvm
 		{
 			"visible"		"0"
 		}
 	}
-	"RedPlayerGap"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap"
-		"xpos"			"c12"
-		"ypos"			"c-21"
-		"ypos_minmode"	"c-75"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap2"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap2"
-		"xpos"			"c12"
-		"ypos"			"c-3"
-		"ypos_minmode"	"c-57"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap3"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap3"
-		"xpos"			"c12"
-		"ypos"			"c15"
-		"ypos_minmode"			"c-39"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap4"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap4"
-		"xpos"			"c12"
-		"ypos"			"c33"
-		"ypos_minmode"	"c-21"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap5"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap5"
-		"xpos"			"c12"
-		"ypos"			"c51"
-		"ypos_minmode"			"c-4"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap6"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap6"
-		"xpos"			"c12"
-		"ypos"			"9999"
-		"ypos_minmode"			"c14"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap7"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap7"
-		"xpos"			"c12"
-		"ypos"			"9999"
-		"ypos_minmode"			"c32"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap8"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap8"
-		"xpos"			"c12"
-		"ypos"			"9999"
-		"ypos_minmode"			"c50"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap9"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap9"
-		"xpos"			"c12"
-		"ypos"			"9999"
-		"ypos_minmode"			"c68"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap10"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap10"
-		"xpos"			"c12"
-		"ypos"			"9999"
-		"ypos_minmode"			"c86"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}
-	"RedPlayerGap11"
-	{
-		"ControlName"		"ctfImagePanel"
-		"fieldName"		"RedPlayerGap11"
-		"xpos"			"c12"
-		"ypos"			"9999"
-		"ypos_minmode"			"c103"
-		"wide"			"254"
-		"tall"			"3"
-		"zpos"			"11"
-		"alpha"			"255"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"border"		"noborder"
-		"visible"		"1"
-		"enabled"		"1"
-		"image"			"replay/thumbnails/hp/REFRACT"
-
-		if_mvm
-		{
-			"visible"		"0"
-		}
-	}	
+	
 	"BlueTeamPlayerLineCover"
 	{
 		"ControlName"		"ImagePanel"
@@ -935,7 +442,7 @@
 		"fieldName"		"BlueTeamPlayerCount"
 		"labelText"		"%blueteamplayercount%"
 		"font"			"product8"
-		"fgcolor"		"TANLIGHT120"
+		"fgcolor"		"245 245 245 110"
 		"textAlignment"		"west"
 		"xpos"			"c-259"
 		"textinsetx"			"0"
@@ -1021,7 +528,7 @@
 		"fieldName"		"RedTeamPlayerCount"
 		"labelText"		"%redteamplayercount%"
 		"font"			"product8"
-		"fgcolor"		"TANLIGHT120"
+		"fgcolor"		"245 245 245 110"
 		"textAlignment"		"west"
 		"xpos"			"c19"
 		"textinsetx"			"0"
@@ -1090,8 +597,8 @@
 		"fieldName"		"ServerTimeLeft"
 		"labelText"		"%servertime%"
 		"font"			"product8"
-		"fgcolor"			"TANLIGHT120"
-		"border"		"blurborder"
+		"fgcolor"			"245 245 245 110"
+		"bgcolor_override"			"collyhuddarkgray"
 		"textAlignment"		"east"
 		"auto_wide_tocontents" "1"
 		"xpos"			"86"
@@ -1115,7 +622,7 @@
 		"labelText"		"SERVER MAP TIME LEFT:"
 		"font"			"productbold8"
 		"fgcolor"			"245 245 245 235"
-		"border"		"blurborder"
+		"bgcolor_override"			"collyhuddarkgray"
 		"textAlignment"		"WEST"
 		"wide" "82"
 		"xpos"			"6"
@@ -1139,7 +646,7 @@
 		"labelText"		"SPECTATORS:"
 		"font"			"productbold8"
 		"fgcolor"			"245 245 245 235"
-		"border"		"blurborder"
+		"bgcolor_override"			"collyhuddarkgray"
 		"textAlignment"		"WEST"
 		"wide" "54"
 		"xpos"			"6"
@@ -1166,8 +673,8 @@
 		"textinsetx"		"12"
 		"zpos"			"5"
 		"font"			"product8"
-		"fgcolor"			"TANLIGHT120"
-		"border"		"blurborder"
+		"fgcolor"			"245 245 245 110"
+		"bgcolor_override"			"collyhuddarkgray"
 		"textAlignment"		"east"
 		"auto_wide_tocontents" "1"
 		"xpos"			"54"
@@ -1627,7 +1134,7 @@
 
 		"StatsBG"
 		{
-			"ControlName"		"ctfImagePanel"
+			"ControlName"		"ImagePanel"
 			"fieldName"		"StatsBG"
 			"xpos"			"0"
 			"ypos"			"0"
@@ -1640,7 +1147,7 @@
 			"border"		"noborder"
 			"visible"		"1"
 			"enabled"		"1"
-			"image"			"replay/thumbnails/hp/REFRACT"
+			"fillcolor"			"collyhuddarkgray"
 
 			if_mvm
 			{
@@ -1807,7 +1314,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"DamLabel2"
 			"font"			"product8"
-			"fgcolor"		"TANLIGHT120"
+			"fgcolor"		"245 245 245 110"
 			"labelText"		"DAMAGE:"
 			"textAlignment"		"west"
 			"xpos"			"5"
@@ -1826,7 +1333,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"Dam2"
 			"font"			"product8"
-			"fgcolor"		"TANLIGHT120"
+			"fgcolor"		"245 245 245 110"
 			"labelText"		"%damage%"
 			"textAlignment"		"east"
 			"xpos"			"5"
@@ -1845,7 +1352,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"HealLabel2"
 			"font"			"product8"
-			"fgcolor"		"TANLIGHT120"
+			"fgcolor"		"245 245 245 110"
 			"labelText"		"HEALING:"
 			"textAlignment"		"west"
 			"xpos"			"5"
@@ -1867,7 +1374,7 @@
 			"ControlName"		"CExLabel"
 			"fieldName"		"Heal2"
 			"font"			"product8"
-			"fgcolor"		"TANLIGHT120"
+			"fgcolor"		"245 245 245 110"
 			"labelText"		"%healing%"
 			"textAlignment"		"east"
 			"xpos"			"5"
@@ -2049,7 +1556,7 @@
 	{
 		"ControlName"		"CTFHudMannVsMachineScoreboard"
 		"fieldName"			"MvMScoreboard"
-		"xpos"				"0"
+		"xpos"				"9999"
 		"ypos"				"0"
 		"zpos"				"10"
 		"wide"				"f0"
@@ -2062,6 +1569,7 @@
 		if_mvm
 		{
 			"visible"		"1"
+			"xpos"		"0"
 		}
 	}
 }

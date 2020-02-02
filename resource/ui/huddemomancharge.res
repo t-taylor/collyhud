@@ -1,20 +1,21 @@
 "Resource/UI/HudDemomanCharge.res"
 {
+
 	"ChargeMeter"
-	{
+	{	
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter"
 		"font"			"Default"
-		"xpos"			"30"
-		"ypos"			"0"
+		"xpos"			"c-55"
+		"ypos"			"r100"
 		"zpos"			"2"
-		"wide"			"80"
-		"tall"			"1"
+		"wide"			"110"
+		"tall"			"4"				
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"textAlignment"	"Left2"
+		"textAlignment"	"Left"
 		"dulltext"		"0"
 		"brighttext"	"0"
 

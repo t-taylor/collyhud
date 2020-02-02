@@ -91,7 +91,7 @@
 				"xpos"			"3"
 				"ypos"			"3"
 				"zpos"			"20"
-				"wide"			"20"
+				"wide"			"0"
 				"tall"			"20"
 				"visible"		"1"
 				"enabled"		"1"
@@ -102,7 +102,7 @@
 
 			"classimagebgvin"
 			{
-				"ControlName"	"CTFImagePanel"
+				"ControlName"	"ImagePanel"
 				"fieldName"		"classimagebgvin"
 				"xpos"			"0"
 				"ypos"			"0"
@@ -112,7 +112,7 @@
 				"alpha"			"255"
 				"visible"		"1"
 				"enabled"		"1"
-				"image"			"replay/thumbnails/hp/REFRACTblur"
+				"fillcolor"			"collyhuddarkgray"
 				"scaleImage"	"1"
 			}
 			
@@ -145,7 +145,7 @@
 				"alpha"			"255"
 				"visible"		"1"
 				"enabled"		"1"
-				"image"			"replay/thumbnails/hp/REFRACTblur"
+				"fillcolor"			"collyhuddarkgray"
 				"scaleImage"	"1"
 			}
 		
