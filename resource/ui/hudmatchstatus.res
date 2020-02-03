@@ -381,7 +381,7 @@
 				"dulltext"				"0"
 				"brighttext"			"0"
 				"bgcolor_override"	   	"0 0 0 0"
-				"fgcolor_override"	   	"255 255 255 100"
+				"fgcolor_override"	   	"255 255 255 255"
 				"proportionaltoparent"	"1"
 			}
 			"respawntime"
@@ -391,7 +391,7 @@
 				"font"			"productbold8"
 				"xpos"			"cs-0.5"
 				"ypos"			"0"
-				"zpos"			"5"
+				"zpos"			"10"
 				"wide"			"f0"
 				"tall"			"12"
 				"autoResize"	"0"

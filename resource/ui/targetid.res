@@ -145,7 +145,7 @@
 		"HealthBonusPosAdj"	"18"
 		"HealthDeathWarning"		"0.49"
 		"TFFont"					"HudFontSmall"
-		"HealthDeathWarningColor"	"HUDDeathWarning"
+		"HealthDeathWarningColor"	"softred"
 		"TextColor"					"Hudoffwhite"
 	}
 	"AmmoIcon"

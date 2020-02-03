@@ -6,6 +6,8 @@ event HudHealthBonusPulse
 	Animate	PlayerStatusHealthValue 	FgColor		"softblue"		Linear 0.0 0.8
 	Animate	PlayerStatusHealthValue   FgColor   "235 235 235 255"		Linear 0.8 1.6
 
+	Animate	PlayerStatusHealthValueMain2 	FgColor		"softblue"		Linear 0.0 0.0
+
 	RunEvent HudHealthBonusPulseLoop	1.6
 }
 
@@ -20,8 +22,8 @@ event HudHealthBonusPulseStop
 	StopEvent HudHealthBonusPulse 0
 	StopEvent HudHealthBonusPulseLoop 0
 	StopPanelAnimations PlayerStatusHealthValue 0
-	Animate	PlayerStatusHealthValue 	FgColor		"softblue"		Linear 0.0 0.8
-  Animate PlayerStatusHealthValue 	FgColor		"235 235 235 255"		Linear 0.0 1.6
+  Animate PlayerStatusHealthValue 	FgColor		"235 235 235 255"		Linear 0.0 0.0
+  Animate PlayerStatusHealthValueMain2 	FgColor		"220 220 220 255"		Linear 0.0 0.0
 }
 
 //===========================================
@@ -31,6 +33,7 @@ event HudHealthDyingPulse
 {
 	Animate PlayerStatusHealthValue 	FgColor		"softred"		Linear 0.0 0.8
 	Animate PlayerStatusHealthValue 	FgColor		"235 235 235 255"		Linear 0.8 1.6
+	Animate PlayerStatusHealthValueMain2 	FgColor		"softred"		Linear 0.0 0.0
 	RunEvent HudHealthDyingPulseLoop	1.6
 }
 
@@ -46,8 +49,8 @@ event HudHealthDyingPulseStop
 	StopEvent HudHealthDyingPulse 0.0
 	StopEvent HudHealthDyingPulseLoop 0.0
 	StopPanelAnimations PlayerStatusHealthValue 0
-  Animate PlayerStatusHealthValue 	FgColor		"softred"		Linear 0.0 0.8
-  Animate PlayerStatusHealthValue 	FgColor		"235 235 235 255"		Linear 0.0 1.6
+  Animate PlayerStatusHealthValue 	FgColor		"235 235 235 255"		Linear 0.0 0.0
+	Animate PlayerStatusHealthValueMain2 	FgColor		"220 220 220 255"		Linear 0.0 0.0
 }
 
 //===========================================
@@ -123,3 +126,24 @@ event HudMedicChargedStop
 }
 
 //===========================================
+event TeamStatus_PlayerDead
+{
+	SetVisible DeathPanel  0 0
+	SetVisible SkullPanel   0 0
+	SetVisible respawntime  1 0
+
+	Animate DeathPanel ypos 3 Accel 0 0.2
+	Animate SkullPanel ypos 3 Accel 0 0.2
+	Animate respawntime ypos 3 Accel 0 0.2
+}
+
+event TeamStatus_PlayerAlive
+{
+	Animate DeathPanel ypos 0 Accel 0 0.2
+	Animate SkullPanel ypos 0 Accel 0 0.2
+	Animate respawntime ypos 0 Accel 0 0.2
+
+	SetVisible DeathPanel  0 0.2
+	SetVisible SkullPanel  0 0.2
+	SetVisible respawntime 0 0.2
+}
